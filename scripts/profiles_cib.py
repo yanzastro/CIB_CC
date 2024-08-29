@@ -17,6 +17,7 @@ from scipy.integrate import simpson
 
 class HaloProfileCIB(HaloProfile):
     """ 
+    This is the superclass of CIB halo profiles based on the format given by the PYCCL package.
     """
     name = 'CIB'
     _one_over_4pi = 0.07957747154
@@ -347,6 +348,7 @@ class Profile2ptCIB(Profile2pt):
     
 class HaloProfileCIBM21(HaloProfileCIB):
     """ 
+    This is the subclass of CIB halo profiles for the  M21 model.
     """
     name = 'CIBM21'
 
@@ -384,6 +386,7 @@ class HaloProfileCIBM21(HaloProfileCIB):
     
 class HaloProfileCIBY23(HaloProfileCIB):
     """ 
+    This is the subclass of CIB halo profiles for the  Y23 model.
     """
     name = 'CIBY23'
 
@@ -426,6 +429,7 @@ class HaloProfileCIBY23(HaloProfileCIB):
 
 class HaloProfileCIBS12(HaloProfileCIB):
     """ 
+    This is the subclass of CIB halo profiles for the S12 model.
     """
     name = 'CIBS12'
 
